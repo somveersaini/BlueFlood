@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@null"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/app_name"
+        android:gravity="start"
+        android:id="@+id/gamename"
+        android:textColor="@color/pure_blue"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        android:textSize="25sp"
+        android:layout_below="@+id/gamename"
+        android:gravity="start"
+        android:id="@+id/finishline"
+        android:textColor="@color/pure_blue"
+        android:background="@null"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        android:textSize="25sp"
+        android:layout_below="@+id/finishline"
+        android:gravity="center"
+        android:id="@+id/finishdescription"
+        android:textColor="@color/pure_blue"
+        android:background="@null"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/panel"
+        android:weightSum="2"
+        android:layout_below="@id/finishdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/contnewgame"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:text="New Game" />
+        <Button
+            android:id="@+id/cont"
+            android:background="@null"
+            android:layout_width="70dp"
+            android:textSize="30sp"
+            android:layout_height="70dp"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:text="Continue"  />
+    </LinearLayout>
+
+</RelativeLayout>
