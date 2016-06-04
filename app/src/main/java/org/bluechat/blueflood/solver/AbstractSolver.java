@@ -1,5 +1,3 @@
-
-
 package org.bluechat.blueflood.solver;
 
 import org.bluechat.blueflood.model.Board;

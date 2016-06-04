@@ -155,22 +155,22 @@ public class acheivements extends Activity{
                 }else if(extramoves == 0){
                    // if(pd == 0) prof.add("Board " + " DFS steps");
                     pd++;
-                    prof.add(item + DFSsteps + " Moves " + "( DFS " + DFSsteps +")");
+                    prof.add(item + DFSsteps + " Moves " + "( DFS " + DFSsteps +" )");
                 }else if (extramoves == 1){
                     //if(dd == 0) dfs.add("Board " + " DFS steps");
                     dd++;
-                    dfs.add(item + (DFSsteps + 1) + " Moves " + "( DFS " + DFSsteps +")");
+                    dfs.add(item + (DFSsteps + 1) + " Moves " + "( DFS " + DFSsteps +" )");
                 }else {
                     //if(rd == 0) revenge.add("Board " + " DFS steps" + " Moves");
                     rd++;
-                    revenge.add(item + (DFSsteps + extramoves) + " Moves " + "( DFS " + DFSsteps +")");
+                    revenge.add(item + (DFSsteps + extramoves) + " Moves " + "( DFS " + DFSsteps +" )");
                 }
 
             }
         }
 
         String start = "Get in the game to see some here!!";
-        String more = "Yo!! play more to get more";
+        String more = "Woo!! play to get more";
 
         if(ud==0) ultimate.add(start);
         else ultimate.add(more);
@@ -182,10 +182,10 @@ public class acheivements extends Activity{
         else revenge.add(more);
 
         // Adding child data
-        listDataHeader.add("Ultimate Dfs Beater     " + ud);
-        listDataHeader.add("Professional DFS Beater " + pd);
-        listDataHeader.add("DFS Beater              " + dd);
-        listDataHeader.add("Revenge for DFS         " + rd);
+        listDataHeader.add("Ultimate DFS Beater       " + ud);
+        listDataHeader.add("Professional DFS Beater  " + pd);
+        listDataHeader.add("DFS Beater                    " + dd);
+        listDataHeader.add("Revenge on DFS            " + rd);
 
         listDataChild.put(listDataHeader.get(0), ultimate); // Header, Child data
         listDataChild.put(listDataHeader.get(1), prof);

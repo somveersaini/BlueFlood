@@ -1,5 +1,3 @@
-
-
 package org.bluechat.blueflood.model;
 
 import android.util.Log;

@@ -13,20 +13,23 @@
     <string name="hintrow">Row</string>
     <string name="btnmygame"> My Game   </string>
     <string name="btnsolution">DFS Solution</string>
-    <string name="shortdesc">A NP-Hard problem\nBeat the DFS based approach</string>
-    <string name="details">This game starts from the top left corner as starting flood.
-    You gotta make this flood of one color (the whole board) by adding (tapping on) the appropriate neighbour color.\n\n
-    The interesting part is that you have to do this in minimum number of steps.\n\n
-    You are competing with GreedyDFS approach of this NP-Hard problem.\n\n
-    Cheers!!!</string>
-
+    <string name="shortdesc">A NP-Hard problem\nBeat the Greedy DFS Strategy</string>
+    <string name="details">This game starts from the top left corner color as starting flood.
+    You gotta make this flood (board) of one color by adding (tapping on) the appropriate neighbour color.\n\n
+    The interesting part is that you have to do this in minimum number of steps which your device calculates based on Greedy DFS Strategy.
+        And this game can generate random Game Board of size up to 100X100 with DFS SOLUTION.
+        But, due to device display and CPU, board of size less than 30X30 is recommended.\n
+        To extend the flood, you can directly select neighbour color or press the color button.\n\n
+        You can see the solution by clicking on DFS SOLUTION button and then navigating the game progress by Arrow Keys.\n\n
+    Can you compete with GreedyDFS approach of this NP-Hard problem.\n\n
+    Lets see!!!</string>
 
     <string name="extramovelessthan0line">Ultimate DFS Beater</string>
     <string name="extramove0line">Professional DFS Beater</string>
     <string name="extramove0desc">Awesome!!\nYou know exact DFS strategy.\nFAAD EKDUM</string>
     <string name="extramove1line">DFS Beater</string>
     <string name="extramove1desc">Cool!!\nYou know how to use Bonus points.\n </string>
-    <string name="extramovegreaterthan1line">DFS Revenge</string>
+    <string name="extramovegreaterthan1line">Revenge on DFS</string>
     <string name="xtraline">Beaten by DFS Strategy!!!</string>
-    <string name="xtradesc">You are running out of Moves.\nYou really only fail when you stop trying.\nWould you like to take revenge with a new game or you wanna continue ?</string>
+    <string name="xtradesc">You are running out of Moves.\nYou really only fail when you stop trying.\nWould you like to play new game or take revenge?</string>
 </resources>

@@ -1,4 +1,3 @@
-
 package org.bluechat.blueflood.solver;
 
 import java.util.Arrays;

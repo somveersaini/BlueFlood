@@ -305,7 +305,7 @@ public class MainActivity extends AppCompatActivity {
             if(extraMoves < 0){
                 //beated dfs
                 line.setText(R.string.extramovelessthan0line);
-                desc.setText("Superb!!\nKonsi chakki ka atta khate ho yrr.\nYou nailed DFS by " + (-extraMoves) + " Moves.");
+                desc.setText("Superb!!\nShuush!!\nYou nailed DFS by " + (-extraMoves) + " Moves.");
             }else if(extraMoves == 0){
                 //dfs equvivalent
                 line.setText(R.string.extramove0line);
@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 //used more moves
                 line.setText(R.string.extramovegreaterthan1line);
-                desc.setText("Yeah!!\n Finally you have taken your revenge against DFS starategy.\nCan\'t fail t try although it took " +  extraMoves + " Moves.");
+                desc.setText("Yeah!!\n Finally you have taken your revenge against DFS strategy although it took " +  extraMoves + " extra Moves.");
             }
             alertDialogBuilder.setView(view);
             final AlertDialog alertDialog = alertDialogBuilder.create();

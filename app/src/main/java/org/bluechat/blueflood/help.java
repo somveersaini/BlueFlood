@@ -17,18 +17,6 @@ import android.widget.TextView;
  */
 public class help extends Activity{
     private static final String TAG = "HelpActivity" ;
-    public static boolean sfx;
-    public static int theme;
-    public static boolean next = false;
-
-
-    Switch  ssfx;
-    SharedPreferences settings;
-    SoundPool sp;
-    int  btnbtn, scs, sce;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,19 +28,20 @@ public class help extends Activity{
 
         Typeface typeface = Typeface.createFromAsset(getAssets(),
                 "zorque.ttf");
-        ((TextView) findViewById(R.id.help1)).setTypeface(typeface);
+        Typeface typeface1 = Typeface.createFromAsset(getAssets(),
+                "future.otf");
+        Typeface typeface2 = Typeface.createFromAsset(getAssets(),
+                "halo.TTF");
+        Typeface typeface3 = Typeface.createFromAsset(getAssets(),
+                "Gasalt-Black.ttf");
+        ((TextView) findViewById(R.id.help1)).setTypeface(typeface1);
         ((TextView) findViewById(R.id.help2)).setTypeface(typeface);
         ((TextView) findViewById(R.id.help3)).setTypeface(typeface);
-        ((TextView) findViewById(R.id.developer)).setTypeface(typeface);
+        ((TextView) findViewById(R.id.developer)).setTypeface(typeface2);
         ((TextView) findViewById(R.id.email)).setTypeface(typeface);
         ((TextView) findViewById(R.id.cont)).setTypeface(typeface);
         ((TextView) findViewById(R.id.fb)).setTypeface(typeface);
-        sp = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
-        btnbtn = sp.load(this, R.raw.btnbtn, 1);
-        scs = sp.load(this, R.raw.btnbtn, 1);
-
-
-        settings = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
+        ((TextView) findViewById(R.id.source)).setTypeface(typeface3);
     }
 
     @Override

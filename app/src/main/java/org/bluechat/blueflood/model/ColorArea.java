@@ -1,4 +1,3 @@
-
 package org.bluechat.blueflood.model;
 
 import it.unimi.dsi.fastutil.ints.IntAVLTreeSet;

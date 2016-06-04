@@ -1,4 +1,3 @@
-
 package org.bluechat.blueflood.model;
 
 import java.beans.PropertyChangeListener;
