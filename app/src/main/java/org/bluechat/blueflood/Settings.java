@@ -179,8 +179,15 @@ public class Settings extends Activity{
 
         Log.d(etwidth.getText().toString(), etwidth.getText().toString());
         if(etheight.getText().length() > 0 && etwidth.getText().length() > 0) {
-            int col = Integer.parseInt(etwidth.getText().toString());
-            int rows = Integer.parseInt(etheight.getText().toString());
+            int rows = 0;
+            int col = 0;
+            try {
+                col = Integer.parseInt(etwidth.getText().toString());
+                rows = Integer.parseInt(etheight.getText().toString());
+            }catch (Exception e){
+                //error happen
+                //not valid number
+            }
             if(col <= 100 && col > 2 && rows > 2 && rows <= 100){
                 column = col;
                 row = rows;
